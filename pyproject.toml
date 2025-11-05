@@ -1,0 +1,23 @@
+[project]
+name = "nlp2sql-fastapi"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "python-dotenv",
+  "pymysql",
+  "sqlalchemy<2.0",               # to match langchain SQLDatabase expectations if needed
+  "langchain",
+  "langchain-core",
+  "langchain-community",
+  "langchain-google-genai",
+  "google-generativeai",
+  "chromadb",
+  "transformers",
+  "torch",
+  "sentence-transformers",
+  "pandas",
+  "jinja2",
+]
